@@ -1,0 +1,24 @@
+<div class="col-sm-2 hidden-xs profile" ng-repeat="u in User">
+    <a ng-click="search(u.username)" id="circle">
+        <div id="circle-flip">
+            <div class="front">
+            <img src="{{u.image}}" class="front">
+            </div>
+            <div class="back">
+                Search
+            </div>
+        </div>
+    </a>
+    <p class="name">{{u.name}}</p>
+    <p class="userName">{{u.username}}</p>
+    <p class="info">{{u.description}}</p>
+    <div class="button-container">
+        <a class="first button" href="{{u.link}}">
+            <div class="front">
+            </div>
+            <div class="bottom">
+                <span>{{u.githubTitle}}</span>
+            </div>
+        </a>
+    </div>
+</div>

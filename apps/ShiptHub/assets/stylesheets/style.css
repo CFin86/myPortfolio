@@ -1,0 +1,619 @@
+/*  
+
+TABLE OF CONTENTS
+    #01 - General and Typography
+    #02 - Navbar
+    #03 - Jumbotron
+    #04 - Container Main
+        #04.1 - Suggested Github Users
+    #05 - Footer
+    #06 - Responsive styles
+        #06.1 - Mobile Devices
+             #06.1.1 - Jumbotron
+             #06.1.2 - Footer
+        #06.2 - X-Large displays 
+*/
+
+
+/* ==========================================================================
+    #01. General and Typography 
+========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Oswald:400);
+body {
+    background: rgba(255, 255, 255, 0.8);
+    font-family: "Oswald", "Arial";
+    border: 1px solid transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    margin: 0px auto;
+    border: 0px;
+    z-index: 0;
+    padding: 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #333333;
+}
+
+
+/* ==========================================================================
+     #02 - Navbar
+========================================================================== */
+
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    font-weight: 800;
+    box-shadow: 0 1px 2px #C3C3C3;
+    -webkit-box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-brand {
+    background: url("/apps/ShiptHub/assets/img/logo.png") center / cover no-repeat;
+    background-origin: content-box;
+    width: 58px;
+    padding: 0px;
+    margin: 2px 15px 3px !important;
+    border-radius: 15px;
+}
+
+.navbar-nav>li>a:hover {
+    background-color: rgb(255, 83, 83) !important;
+    color: #ffffff !important;
+}
+
+
+/* ==========================================================================
+    #03 - Jumbotron
+========================================================================== */
+
+.jumbotron {
+    background: url("/apps/ShiptHub/assets/img/github.jpg")no-repeat center center;
+    background-size: cover;
+    max-width: 100%;
+    box-shadow: 0 1px 2px #C3C3C3;
+    -webkit-box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.18);
+}
+
+.start-box {
+    margin-top: 55px;
+    background: #F7F7F7;
+    font-family: 'proxima-nova', sans-serif;
+    width: 37rem;
+    height: 25rem;
+    float: right;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.start-box h1 {
+    font-weight: bold;
+    font-size: 4.3rem;
+    line-height: 1.03;
+}
+
+.start-box h1 strong {
+    color: rgb(255, 83, 83);
+}
+
+.img-responsive.a {
+    border-radius: 15px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 6.4rem;
+    height: auto;
+    max-height: 20rem;
+}
+
+
+/* ==========================================================================
+    #04 - Container Main
+========================================================================== */
+
+.searchBox {
+    width: 20rem;
+    margin-bottom: .5rem;
+}
+
+.searchBtn {
+    margin-bottom: 8px
+}
+
+.loader {
+    position: inherit;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid rgb(255, 83, 83);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.img-wrapper {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    max-height: 20rem;
+    border-radius: 100%;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+#users.ng-move,
+#users.ng-enter,
+#users.ng-leave {
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+#users.ng-leave.ng-leave-active,
+#users.ng-move,
+#users.ng-enter {
+    opacity: 0;
+}
+
+#users.ng-leave,
+#users.ng-move.ng-move-active,
+#users.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+img.img-responsive.b {
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
+    max-height: 15rem;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 10px 6px -6px #999;
+    -moz-box-shadow: 0 10px 6px -6px #999;
+    box-shadow: 0 10px 6px -6px #999;
+}
+
+#main h2 {
+    font-family: "Oswald", "Arial";
+    margin-bottom: .5rem;
+}
+
+#main h3 {
+    font-family: "Oswald", "Arial";
+    margin: .5rem 0 4.5rem;
+}
+
+#orh3 {
+    margin-bottom: 2.5rem !important;
+}
+
+
+/* ==========================================================================
+    #04.1 - Suggested Github Users 
+========================================================================== */
+
+.profile {
+    width: 16rem;
+    margin: 0rem 1rem 4rem 1rem;
+    background: radial-gradient(ellipse at bottom, #8d93a0 0%, #404149 100%);
+    border-radius: 0.2rem;
+    padding: 1rem;
+    color: #FFF;
+}
+
+.name {
+    font-family: "Oswald", "Arial";
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2px;
+}
+
+.userName {
+    font-family: "Oswald", "Arial";
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.info {
+    font-family: "Roboto Condensed", "Arial";
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+}
+
+#circle {
+    display: block;
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+    text-align: left;
+    perspective: 1200px;
+}
+
+#circle:hover #circle-flip {
+    transform: rotateY(180deg);
+}
+
+#circle-flip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transition: all 500ms;
+    animation: flip 3s;
+    animation-delay: 0.5s;
+}
+
+.front,
+.back,
+.bottom {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    backface-visibility: hidden;
+}
+
+#circle .front {
+    background-size: cover;
+    border-radius: 50%;
+}
+/* .frontIMG{
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+} */
+#circle .back {
+    display: inline;
+    position: absolute;
+    background: url("/apps/ShiptHub/assets/img/search.svg") #FFF;
+    margin: 0 auto;
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    line-height: 11rem;
+    color: #666;
+    font-family: "Roboto Condensed", "Arial";
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.08rem;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+.button {
+    display: block;
+    height: 3.5rem;
+    width: 13rem;
+    margin: 0 auto 1.4rem auto;
+    transform-style: preserve-3d;
+    transform-origin: 50% 25px -25px;
+    transition: all 300ms;
+    animation: underflip 3s;
+    animation-delay: 4s;
+}
+
+.button:hover {
+    transform: rotateX(90deg);
+}
+
+.first.button .front {
+    background: url("/apps/ShiptHub/assets/img/ghublogo.png") #FFF;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.first.button .bottom {
+    background: rgb(255, 83, 83);
+    white-space: nowrap;
+}
+
+.first.button .bottom::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: -10px;
+}
+
+.first.button .bottom span {
+    color: #FFF;
+    font-family: "Roboto Condensed", "Arial";
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.07rem;
+    vertical-align: middle;
+    display: inline-block;
+    white-space: normal;
+    padding: 0.3rem;
+}
+
+.button .bottom {
+    transform: rotateX(-90deg) translateY(25px) translateZ(25px);
+}
+.mobileH3{
+    display: none;
+    visibility: hidden;
+}
+
+.mobileProfile {
+    display: none;
+    visibility: hidden;
+}
+
+
+/* ==========================================================================
+    #05 - Footer
+========================================================================== */
+
+.navbar-absolute-bottom {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-top: 12rem!important;
+    bottom: -3rem !important;
+}
+
+.gHubLogo {
+    margin-bottom: -.7rem;
+}
+
+.searchMsg {
+    font-size: 1.8rem;
+}
+
+.remTime {
+    margin-top: -.1rem;
+}
+
+.icon {
+    margin: 0 auto;
+    width: 29px;
+    height: 4rem;
+    border-radius: 4px;
+}
+
+
+/* ==========================================================================
+    #06 - Responsive Style
+========================================================================== */
+
+
+/* ===========
+    #06.1 - Mobile devices 
+=============== */
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        background: url("/apps/ShiptHub/assets/img/logo.png") center / cover no-repeat;
+        background-origin: content-box;
+        width: 58px;
+        padding: 0px;
+        margin: 2px 15px 3px !important;
+        border-radius: 15px;
+    }
+    .navbar-header {
+        margin: 0 !important;
+    }
+    /* ===============
+    #06.1.1 - Jumbotron
+=================== */
+    .jumbotron {
+        padding: 3rem 0 12rem !important;
+    }
+    .start-box {
+        margin-top: 55px;
+        background: #F7F7F7;
+        color: black;
+        width: 25rem;
+        height: 20rem;
+        float: none;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        border-radius: 5px;
+        /* opacity: .95; */
+    }
+    .start-box h1 {
+        font-weight: 600;
+        padding: 1.5rem 1.5rem 0;
+        font-size: 3.1rem;
+    }
+    .logo-wrapper {
+        border-radius: 10px;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 6.4rem;
+        height: auto;
+        max-height: 20rem;
+    }
+    .announcement {
+        font-size: 2.4rem;
+    }
+    img.img-responsive.b {
+        width: 100%;
+        max-width: 10rem;
+        height: auto;
+        max-height: 10rem;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+        -webkit-box-shadow: 0 10px 6px -6px #999;
+        -moz-box-shadow: 0 10px 6px -6px #999;
+        box-shadow: 0 10px 6px -6px #999;
+    }
+    /* ===============
+    #06.1.2 - mobile profile card
+=================== */
+#main h3{
+    margin-bottom: 0px;
+}
+.mobileH3{
+    display: block;
+    visibility: visible !important;
+    margin-bottom: 20px !important;
+}
+    .mobileProfile {
+        display: block;
+        visibility: visible !important;
+        clear: both;
+        float: none;
+        position: relative;
+        max-width: 36.4rem;
+        min-width: 23rem;
+        margin: 0 auto;
+        background: radial-gradient(ellipse at bottom, #8d93a0 0%, #404149 100%);
+        border-radius: 10rem 0.5rem 0.5rem 10rem;
+        padding: 0rem;
+        color: #FFF;
+    }
+    .name {
+        font-family: "Oswald", "Arial";
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.1rem;
+        margin-bottom: 2px;
+    }
+    .info {
+        font-family: "Roboto Condensed", "Arial";
+        font-size: 1.35rem;
+        padding: 0 5px 1rem 0;
+        margin-left: 7rem;
+        line-height: 1.1;
+    }
+    .mblCircle {
+        float: left;
+        display: block;
+        position: relative;
+        width: 6.4rem;
+        height: 6.4rem;
+        margin: 0 auto;
+        text-align: left;
+        perspective: 1200px;
+    }
+    .circle:hover #circle-flip {
+        transform: rotateY(180deg);
+    }
+    .circle-flip {
+        width: 100%;
+        height: 100%;
+    }
+    .front,
+    .back,
+    .bottom {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+    }
+    .mblCircle .front {
+        background-size: cover;
+        border-radius: 50%;
+    }
+    .mblCircle .back {
+        background: url("/../img/search.svg") #FFF;
+        background-size: 35%;
+        background-repeat: no-repeat;
+        background-position: center 35%;
+        line-height: 11rem;
+        color: #666;
+        font-family: "Roboto Condensed", "Arial";
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.08rem;
+        border-radius: 50%;
+    }
+    .first.button .front {
+        background: url("/apps/ShiptHub/assets/img/ghublogo.png") #FFF;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .first.button .bottom {
+        background: rgb(255, 83, 83);
+        white-space: nowrap;
+    }
+    .first.button .bottom span {
+        color: #FFF;
+        font-family: "Roboto Condensed", "Arial";
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.07rem;
+        vertical-align: middle;
+        display: inline-block;
+        white-space: normal;
+        padding: 0.3rem;
+    }
+    /* ===============
+    #06.1.3 - Footer
+=================== */
+    .gHubLogo {
+        padding-bottom: 0;
+        height: 40px;
+    }
+    .searchMsg {
+        margin-top: 2px;
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    .remTime {
+        margin-top: 0.01rem;
+    }
+}
+@media (max-width: 992px) {
+    .profile:nth-child(5){
+    visibility: hidden;
+    display: none;
+    }
+    }
+@media (max-width: 1200px) {
+.profile:nth-child(6){
+visibility: hidden;
+display: none;
+   }
+}

@@ -1,0 +1,11 @@
+<div ng-repeat="u in User | filter:{mobile:true}">
+        <div class="col-xs-12 text-center mobileProfile" ng-click="search(u.username)">
+                <a value="cfin86" class="mblCircle">
+                        <img src="{{ u.image }}" class="front"/>
+                </a>
+                <div>
+                        <p class="name">{{ u.name }}</p>
+                        <p class="info">{{ u.description }}</p>
+                </div>
+        </div>
+</div>
