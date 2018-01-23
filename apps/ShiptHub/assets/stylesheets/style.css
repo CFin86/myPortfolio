@@ -419,7 +419,7 @@ img.img-responsive.b {
 
 @media (max-width: 767px) {
     .navbar-brand {
-        background: url("/apps/ShiptHub/assets/img/logo.png") center / cover no-repeat;
+        background: url("myPortfolio//apps/ShiptHub/assets/img/logo.png") center / cover no-repeat;
         background-origin: content-box;
         width: 58px;
         padding: 0px;
@@ -567,7 +567,7 @@ img.img-responsive.b {
         border-radius: 50%;
     }
     .first.button .front {
-        background: url("/apps/ShiptHub/assets/img/ghublogo.png") #FFF;
+        background: url("myPortfolio/apps/ShiptHub/assets/img/ghublogo.png") #FFF;
         background-size: 80%;
         background-repeat: no-repeat;
         background-position: center;

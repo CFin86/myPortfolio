@@ -7,23 +7,23 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/',
             views: {
                 'header': {
-                    templateUrl: 'apps/ShiptHub/app/components/core/header/navbarView.html',
+                    templateUrl: 'myPortfolio/apps/ShiptHub/app/components/core/header/navbarView.html',
                     controller: 'NavbarController'
                 },
                 'content': {
-                    templateUrl: 'apps/ShiptHub/app/components/home/homeView.html',
+                    templateUrl: 'myPortfolio/apps/ShiptHub/app/components/home/homeView.html',
                     controller: 'HomeController'
                 },
                 'profileCard@home': {
-                    templateUrl: 'apps/ShiptHub/app/components/core/profiles/profileCard.html',
+                    templateUrl: 'myPortfolio/apps/ShiptHub/app/components/core/profiles/profileCard.html',
                     controller: 'ProfileController'
                 },
                 'mobileCard@home': {
-                    templateUrl: 'apps/ShiptHub/app/components/core/profiles/mobileCard.html',
+                    templateUrl: 'myPortfolio/apps/ShiptHub/app/components/core/profiles/mobileCard.html',
                     controller: 'ProfileController'
                 },
                 'footer': {
-                    templateUrl: 'apps/ShiptHub/app/components/core/footer/footerView.html',
+                    templateUrl: 'myPortfolio/apps/ShiptHub/app/components/core/footer/footerView.html',
                     controller: 'FooterController'
                 }
             }

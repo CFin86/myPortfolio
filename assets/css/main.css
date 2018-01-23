@@ -28,8 +28,8 @@ html {
 
 @font-face {
     font-family: "Befolk Regular";
-    src: url("/assets/libs/fonts/webfontkit-20180114-000054/befolk_script-webfont.woff");
-    src: url("/assets/libs/fonts/webfontkit-20180114-000054/befolk_script-webfont.woff") format("woff"), url("/assets/libs/webfontkit-20180114-000054/befolk_script-webfont.woff2") format("woff2");
+    src: url("/myPortfolio/assets/libs/fonts/webfontkit-20180114-000054/befolk_script-webfont.woff");
+    src: url("/myPortfolio/assets/libs/fonts/webfontkit-20180114-000054/befolk_script-webfont.woff") format("woff"), url("/assets/libs/webfontkit-20180114-000054/befolk_script-webfont.woff2") format("woff2");
 }
 
 
@@ -566,15 +566,15 @@ MEDIA QUERIES
         grid-row: 10 / 17;
         width: auto;
         height: auto;
-        background-color: rgba(0,0,0, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
     }
-    .introPara{
+    .introPara {
         margin-left: 5px;
         text-align: left;
         color: white;
     }
-    .arrow-wrapper{
-margin-bottom: 0;
+    .arrow-wrapper {
+        margin-bottom: 0;
     }
     .arrowDown {
         height: 65%;
@@ -593,7 +593,7 @@ margin-bottom: 0;
     #burger {
         left: 80%;
     }
-    #in-touch{
+    #in-touch {
         text-align: center !important;
         position: relative;
         display: block;
@@ -625,24 +625,24 @@ margin-bottom: 0;
     .project-link-wrapper a {
         padding: 7px 25px;
     }
-    .port-top-title{
+    .port-top-title {
         grid-column: 1/11;
     }
-    .port-btm-title{
+    .port-btm-title {
         grid-column: 2/11;
     }
-    .port-btm-title :nth-child(2){
+    .port-btm-title :nth-child(2) {
         margin-left: 5px;
     }
-    .port-btm-title :nth-child(3){
+    .port-btm-title :nth-child(3) {
         margin-left: 20px;
     }
-    .port-sub-title{
+    .port-sub-title {
         text-align: center;
         margin: 0 10px;
         color: gray;
     }
-    .ProjectParagraph{
+    .ProjectParagraph {
         margin: 1em auto;
     }
     /* ==========================================================================
@@ -657,11 +657,9 @@ margin-bottom: 0;
         grid-row: 1/11;
         /* margin-bottom: 10rem; */
     }
-
     /* ==========================================================================
     #01.1 xsmall Shipt Hub styles
 ========================================================================== */
-   
     .project-main.dark {
         grid-template-rows: 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh;
     }
@@ -675,28 +673,28 @@ margin-bottom: 0;
         grid-column: 2 /6;
         grid-row: 1/10;
     }
-    .project-link-wrapper.dark{
+    .project-link-wrapper.dark {
         grid-row: 17;
     }
-    .port-btm-title.dark :nth-child(2){
+    .port-btm-title.dark :nth-child(2) {
         margin-left: 15px;
         padding-left: 1px;
     }
-    .port-btm-title.dark :nth-child(3){
+    .port-btm-title.dark :nth-child(3) {
         margin-left: 30px;
         padding-left: 5px;
     }
     /* ==========================================================================
     #01.1 xsmall Covalence Store styles
 ========================================================================== */
-   .project-wrapper.two {
+    .project-wrapper.two {
         grid-template-columns: 3vw 22.5vw 22.5vw 22.5vw 23.5vw 3vw;
         grid-template-rows: 12.857vh 12.857vh 12.857vh 12.857vh 12.857vh 12.857vh 6.857vh;
         padding: 1.5rem 0 1.5rem;
         grid-row: 1/15;
     }
     .project-main.light-grey {
-        grid-template-rows: 6.66vh  6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh;
+        grid-template-rows: 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh;
     }
     #project-2 {
         grid-row: 1/10;
@@ -711,12 +709,12 @@ margin-bottom: 0;
         grid-column: 2/12;
     }
     #jul17 {
-    margin-left: 1.4em;
+        margin-left: 1.4em;
     }
-    .project-link-wrapper.light-grey{
+    .project-link-wrapper.light-grey {
         grid-row: 16;
     }
-    .port-sub-title.light-grey{
+    .port-sub-title.light-grey {
         margin-left: 8px;
     }
 }
@@ -733,24 +731,24 @@ margin-bottom: 0;
         grid-column: 3 / 4;
     }
     .finneyIntro {
-        background-color: rgba(0,0,0, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         grid-column: 1/8;
         grid-row: 10 / 16;
         width: auto;
         height: auto;
     }
-    .myNameIs{
+    .myNameIs {
         font-size: 1.45rem;
     }
-    .introPara{
-        margin:-25px auto;
+    .introPara {
+        margin: -25px auto;
         text-align: left;
         color: white;
         font-size: 1.35rem;
         line-height: 25px;
     }
-    .arrow-wrapper{
-margin-bottom: 0;
+    .arrow-wrapper {
+        margin-bottom: 0;
     }
     .arrowDown {
         height: 75%;
@@ -769,7 +767,7 @@ margin-bottom: 0;
     #burger {
         float: right;
     }
-    #in-touch{
+    #in-touch {
         text-align: center;
         position: relative;
         margin: 0 auto;
@@ -802,25 +800,24 @@ margin-bottom: 0;
     .project-link-wrapper a {
         padding: 7px 25px;
     }
-    .port-top-title{
+    .port-top-title {
         display: none;
     }
-    .port-btm-title{
+    .port-btm-title {
         display: none;
     }
-    .port-btm-title :nth-child(2){
+    .port-btm-title :nth-child(2) {
         margin-left: 5px;
     }
-    .port-btm-title :nth-child(3){
+    .port-btm-title :nth-child(3) {
         margin-left: 20px;
     }
-    .port-sub-title{
+    .port-sub-title {
         text-align: center;
         margin: 0 10px;
         color: gray;
     }
-    .ProjectParagraph{
-
+    .ProjectParagraph {
         margin: 1em auto;
     }
     /* ==========================================================================
@@ -835,11 +832,9 @@ margin-bottom: 0;
         grid-row: 1/12;
         /* margin-bottom: 10rem; */
     }
-
     /* ==========================================================================
     #01.1 small Shipt Hub styles
 ========================================================================== */
-   
     .project-main.dark {
         grid-template-rows: 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh;
     }
@@ -853,21 +848,21 @@ margin-bottom: 0;
         grid-column: 2 /6;
         grid-row: 1/10;
     }
-    .project-link-wrapper.dark{
+    .project-link-wrapper.dark {
         grid-row: 17;
     }
-    .port-btm-title.dark :nth-child(2){
+    .port-btm-title.dark :nth-child(2) {
         margin-left: 15px;
         padding-left: 1px;
     }
-    .port-btm-title.dark :nth-child(3){
+    .port-btm-title.dark :nth-child(3) {
         margin-left: 30px;
         padding-left: 5px;
     }
     /* ==========================================================================
     #01.1 small Covalence Store styles
 ========================================================================== */
-   .project-wrapper.two {
+    .project-wrapper.two {
         grid-template-columns: 3vw 22.5vw 22.5vw 22.5vw 23.5vw 3vw;
         grid-template-rows: 12.857vh 12.857vh 12.857vh 12.857vh 12.857vh 12.857vh 12.857vh 12.857vh 6.857vh 6.857vh;
         padding: 1.5rem 0 1.5rem;
@@ -889,13 +884,12 @@ margin-bottom: 0;
         grid-column: 2/12;
     }
     #jul17 {
-    margin-left: 39px;
+        margin-left: 39px;
     }
-    .project-link-wrapper.light-grey{
+    .project-link-wrapper.light-grey {
         grid-row: 16;
     }
 }
-
 
 @media screen and (min-width: 769px) {
     .myNameIs {
@@ -903,20 +897,20 @@ margin-bottom: 0;
         margin-bottom: -15px;
         font-size: 1.45rem;
     }
-    .introPara{
+    .introPara {
         font-size: 1.45rem;
         line-height: 30px;
     }
-    .sidebarContainer{
+    .sidebarContainer {
         grid-column-end: 8;
     }
-    .sideLi{
+    .sideLi {
         font-size: 1.45rem;
     }
-    .port-top-title{
+    .port-top-title {
         display: none;
     }
-    .port-btm-title{
+    .port-btm-title {
         display: none;
     }
 }
