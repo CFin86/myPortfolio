@@ -28,8 +28,8 @@ html {
 
 @font-face {
     font-family: "Befolk Regular";
-    src: url("/myPortfolio/assets/libs/fonts/webfontkit-20180114-000054/befolk_script-webfont.woff");
-    src: url("/myPortfolio/assets/libs/fonts/webfontkit-20180114-000054/befolk_script-webfont.woff") format("woff"), url("/assets/libs/webfontkit-20180114-000054/befolk_script-webfont.woff2") format("woff2");
+    src: url("../libs/fonts/webfontkit-20180114-000054/befolk_script-webfont.woff");
+    src: url("../libs/fonts/webfontkit-20180114-000054/befolk_script-webfont.woff") format("woff"), url("/assets/libs/webfontkit-20180114-000054/befolk_script-webfont.woff2") format("woff2");
 }
 
 
