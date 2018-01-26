@@ -771,7 +771,7 @@ MEDIA QUERIES
 
 @media screen and (max-width: 768px) and (min-width: 426px) {
     #home.main {
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         grid-template-columns: 2vw 24vw 24vw 24vw 24vw 2vw;
         grid-template-rows: 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh 6.66vh;
         grid-column: 1 / 8;
