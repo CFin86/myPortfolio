@@ -587,6 +587,9 @@ MEDIA QUERIES
         top: .5rem;
         right: 1rem;
     }
+    .overlay {
+        height:100%;
+    }
     .finneyIntro {
         padding: 0 0px 0 10px;
         /* width: 100%; */
