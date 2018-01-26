@@ -44,8 +44,10 @@ html {
     background: url("../img/backgrounds/headShot.png")no-repeat center top;
     background-size: cover;
     background-color: rgb(19, 19, 19);
-    /* height: 100vh; */
-    /* width: 100%; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     box-sizing: border-box;
 }
 
@@ -259,9 +261,11 @@ li {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .contactLinks li a {
     display: inline-flex;
 }
+
 .arrow-wrapper {
     width: 72px;
     height: 15vh;
@@ -383,7 +387,7 @@ li {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 5vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 5vw;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px ;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
     padding-bottom: 1rem;
 }
 
@@ -466,7 +470,6 @@ li {
     /* margin: 0 40px; */
     grid-column: 2 / 12;
     grid-row: 1 / 4;
-    
 }
 
 .project-main.dark {
@@ -574,8 +577,7 @@ MEDIA QUERIES
 @media only screen and (max-width: 425px) {
     #home.main {
         background-attachment: fixed;
-        grid-template-columns: 2vw 32vw 32vw 32vw 2vw;
-        grid-column: 1/7;
+        grid-template-columns: 2vw 32vw 30vw 32vw ;
         grid-row: 1/10;
         width: 100%;
     }
@@ -587,7 +589,8 @@ MEDIA QUERIES
         right: 1rem;
     }
     .finneyIntro {
-        padding: 0 5px 0 5px;
+        padding: 0 0px 0 10px;
+        /* width: 100%; */
         grid-column: 1/6;
         grid-row: 5 / 10;
         background-color: rgba(0, 0, 0, 0.7);
@@ -620,10 +623,11 @@ MEDIA QUERIES
     }
     a.fa-links {
         font-size: 1.15rem;
+        -webkit-text-fill-color: aqua;
     }
     .project-main {
         grid-template-columns: 3vw;
-        grid-template-rows:100px 100px 100px 100px 100px 65px;
+        grid-template-rows: 100px 100px 100px 100px 100px 65px;
         max-height: 600px;
     }
     /* ==========================================================================
@@ -641,20 +645,18 @@ MEDIA QUERIES
         text-align: left;
         font-size: 3.5rem;
     }
-     .project-link-wrapper {
-         grid-column: 1/12;
-
-         height: 15px;
-         width:auto;
-         /* background-color: white; */
-         position: relative;
-         /* left: 5rem; */
+    .project-link-wrapper {
+        grid-column: 1/12;
+        height: 15px;
+        width: auto;
+        /* background-color: white; */
+        position: relative;
+        /* left: 5rem; */
         top: 4rem;
         display: block;
         /* margin: 0 auto; */
         z-index: 1;
-
-    } 
+    }
     .project-link-wrapper a {
         margin: 0 20px;
     }
@@ -675,9 +677,10 @@ MEDIA QUERIES
         margin: 1.5rem 2.5rem 0 0;
         color: gray;
     }
-    .port-sub-title.dark{
+    .port-sub-title.dark {
         text-align: center;
-        margin-left: 20px;;
+        margin-left: 20px;
+        ;
         color: white;
     }
     .ProjectParagraph {
@@ -706,7 +709,7 @@ MEDIA QUERIES
     }
     .project-wrapper.one {
         grid-template-columns: 3vw 22.5vw 22.5vw 22.5vw 23.5vw 3vw;
-        grid-template-rows: 100px 100px 100px 100px 100px 100px 10px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 50px 10px;
         grid-row: auto;
         /* max-height: 800px; */
     }
@@ -716,7 +719,7 @@ MEDIA QUERIES
         /* max-height: 600px; */
     }
     .project-link-wrapper.dark {
-        top: 10rem;
+        top: 13rem;
         grid-column: 1/12;
         /* grid-row: 9; */
     }
@@ -807,7 +810,6 @@ MEDIA QUERIES
     .sidebarContainer {
         display: none;
     }
-   
     #in-touch {
         text-align: center;
         position: relative;
@@ -937,7 +939,7 @@ MEDIA QUERIES
 @media screen and (min-width: 769px) and (max-width: 1219px) {
     .myNameIs {
         text-align: center;
-        font-size: 1.45rem;
+        font-size: 1.2rem;
     }
     .introPara {
         font-size: 1.45rem;
@@ -956,8 +958,9 @@ MEDIA QUERIES
         display: none;
     }
 }
+
 @media screen and (min-width: 1220px) {
-    .MockUp{
+    .MockUp {
         grid-row: 1/5;
     }
 }
