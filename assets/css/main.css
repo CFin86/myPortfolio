@@ -576,7 +576,6 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 425px) {
     #home.main {
-        background-attachment: fixed;
         grid-template-columns: 2vw 32vw 30vw 32vw ;
         grid-row: 1/10;
         width: 100%;
@@ -624,6 +623,10 @@ MEDIA QUERIES
     a.fa-links {
         font-size: 1.15rem;
         -webkit-text-fill-color: aqua;
+    }
+    .contactLinks li a{
+        -webkit-text-fill-color: aqua;
+        display: inline;
     }
     .project-main {
         grid-template-columns: 3vw;
