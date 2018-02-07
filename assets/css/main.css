@@ -40,7 +40,7 @@ html {
 .main {
     display: grid;
     grid-template-rows: 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh;
-    grid-template-columns: 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw;
+    grid-template-columns: 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 8.3vw 6.3vw;
     background: url("../img/backgrounds/headShot.png")no-repeat center top;
     background-size: cover;
     background-color: rgb(19, 19, 19);
@@ -208,7 +208,7 @@ a.fa-links {
 ========================================================================== */
 
 .finneyIntro {
-    grid-column: 8/12;
+    grid-column: 8/13;
     grid-row-start: 3;
     color: white;
 }
@@ -268,8 +268,8 @@ li {
 
 .arrow-wrapper {
     width: 72px;
-    height: 15vh;
-    margin: 20px auto;
+    height: 40px;
+    margin: 0px auto;
 }
 
 .arrowDown {
@@ -365,7 +365,7 @@ li {
     position: relative;
     grid-column: 4/ 9;
     grid-row: 6;
-    height: 15px;
+    height: 18px;
     width: 75%;
     text-align: center;
     background-color: white;
@@ -386,7 +386,7 @@ li {
 .project-wrapper {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 5vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 5vw;
+    grid-template-columns: 5vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 3vw;
     grid-template-rows: 100px 100px 100px 100px 100px 100px;
     padding-bottom: 1rem;
 }
@@ -453,7 +453,7 @@ li {
 
 .project-wrapper.one {
     background-color: #333A40;
-    padding: 40px 0 2rem;
+    padding: 40px 0 3.5rem;
     grid-template-rows: 100px;
 }
 
@@ -513,7 +513,9 @@ li {
 .ProjectParagraph.dark {
     color: white;
 }
-
+.port-sub-title.dark{
+    color: white;
+}
 
 /* ==========================================================================
     #09 - Project 2
@@ -603,6 +605,7 @@ MEDIA QUERIES
     }
     .arrow-wrapper {
         margin-bottom: 0;
+        height: 6.5rem;
     }
     .arrowDown {
         height: 65%;
@@ -653,14 +656,14 @@ MEDIA QUERIES
     }
     .project-link-wrapper {
         grid-column: 1/12;
-        height: 15px;
-        width: auto;
+        height: 23px;
+        width: 95%;
         /* background-color: white; */
         position: relative;
         /* left: 5rem; */
         top: 4rem;
         display: block;
-        /* margin: 0 auto; */
+        margin: 0 auto;
         z-index: 1;
     }
     .project-link-wrapper a {
@@ -842,9 +845,10 @@ MEDIA QUERIES
         font-size: 3.5rem;
     }
     .project-link-wrapper {
-        grid-column: 3/12;
+        grid-column: 1/12;
         grid-row: 12;
         top: 10px;
+        margin: 0 auto;
     }
     .project-link-wrapper a {
         padding: 7px 25px;
